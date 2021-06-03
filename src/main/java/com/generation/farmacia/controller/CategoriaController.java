@@ -19,7 +19,7 @@ import com.generation.farmacia.repository.CategoriaRepository;
 @RequestMapping("/categorias")
 public class CategoriaController {
 	
-	public CategoriaRepository repositorio;
+	private CategoriaRepository repositorio;
 	
 	@GetMapping
 	public ResponseEntity<List<Categoria>> GetAll(){
